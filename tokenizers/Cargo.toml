@@ -65,8 +65,9 @@ esaxx-rs = { version = "0.1.10", default-features = false, features=[]}
 monostate = "0.1.9"
 
 [features]
-default = ["progressbar", "onig", "esaxx_fast"]
-esaxx_fast = ["esaxx-rs/cpp"]
+default = ["progressbar", "onig"]
+#default = ["progressbar", "onig", "esaxx_fast"]
+#esaxx_fast = ["esaxx-rs/cpp"]
 progressbar = ["indicatif"]
 http = ["hf-hub"]
 unstable_wasm = ["fancy-regex", "getrandom/js"]
